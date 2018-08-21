@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
 import org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator;
@@ -18,7 +19,7 @@ import com.yonyou.cloud.zuul.db.store.ZuulRouteStore;
  * @author joy
  */
 public class StoreProxyRouteLocator extends DiscoveryClientRouteLocator {
-	private Logger logger=Logger.getLogger(StoreProxyRouteLocator.class);
+	private Logger logger=LoggerFactory.getLogger(StoreProxyRouteLocator.class);
 
     private final ZuulRouteStore store;
     private ZuulProperties properties;

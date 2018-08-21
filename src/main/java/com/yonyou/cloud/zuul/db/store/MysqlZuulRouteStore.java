@@ -3,7 +3,8 @@ package com.yonyou.cloud.zuul.db.store;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
 
@@ -15,7 +16,7 @@ import com.yonyou.cloud.zuul.db.mapper.RouteMapper;
  * @author joy
  */
 public class MysqlZuulRouteStore implements ZuulRouteStore {
-	private Logger logger=Logger.getLogger(MysqlZuulRouteStore.class);
+	private Logger logger=LoggerFactory.getLogger(MysqlZuulRouteStore.class);
 //	@Autowired
 //	@Qualifier("zuulDataSource")
 //	public DataSource dataSource;
