@@ -3,8 +3,8 @@ package com.yonyou.cloud.zuul.db.store;
 import java.util.List;
 
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
+
+import com.yonyou.cloud.zuul.db.entity.RouteVersionEntity;
 
 /**
  * 
@@ -16,4 +16,9 @@ public interface ZuulRouteStore {
      * @return zuul的路由集合
      */
     List<ZuulProperties.ZuulRoute> findAll();
+    /**
+     * 读取所有的路由版本信息
+     * @return zuul的路由版本集合
+     */
+    List<RouteVersionEntity> findVersionAll();
 }
