@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>com.yonyou.cloud</groupId>
 			<artifactId>datasource-hikaricp-starter</artifactId>
-			<version>1.1.0</version>
+			<version>1.1.1</version>
 		</dependency>
 
 		<!-- Mybatis Generator -->
